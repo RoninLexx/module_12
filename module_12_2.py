@@ -1,4 +1,5 @@
 import unittest
+from runner_and_tournament import Runner
 
 
 class Runner:
@@ -78,3 +79,8 @@ class TournamentTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# В методе start класса Tournament, чтобы избежать ситуации,
+# когда бегун с меньшей скоростью может преодолеть дистанцию раньше,
+# чем быстрее бегун, следует убедиться, что каждый бегун бежит до конца дистанции,
+# а результат возвращается верно.
