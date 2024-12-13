@@ -24,10 +24,12 @@ class TournamentTest(unittest.TestCase):
     def test_first_tournament(self):
         self.assertTrue(True)
 
+    is_frozen = random.randint(0, 2) == 1
     @unittest.skipIf(is_frozen, 'Тесты в этом кейсе заморожены')
     def test_second_tournament(self):
         self.assertTrue(True)
 
+    is_frozen = random.randint(0, 2) == 1
     @unittest.skipIf(is_frozen, 'Тесты в этом кейсе заморожены')
     def test_third_tournament(self):
         self.assertTrue(True)
